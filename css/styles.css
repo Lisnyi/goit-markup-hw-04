@@ -7,6 +7,8 @@
   --black-color: #000000;
   --secondary-backgraund-color: #f5f4fa;
   --hero-backgraund-color: #2f303a;
+  --clients-logo-color: #afb1b8;
+  --footer-social-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -205,7 +207,6 @@ body {
 .features-icon {
   width: 70px;
   height: 70px;
-  margin: auto auto;
 }
 .features-title {
   margin-top: 0;
@@ -281,7 +282,7 @@ body {
   line-height: 1.19;
   text-align: center;
 }
-.social-list {
+.team-social {
   display: flex;
   justify-content: space-between;
   flex-basis: calc((100% - 30px) / 4);
@@ -292,7 +293,7 @@ body {
   height: 44px;
   padding: 12px;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--clients-logo-color);
 }
 .social-icon {
   fill: currentColor;
@@ -311,10 +312,10 @@ body {
 .clients-box {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--clients-logo-color);
   border-radius: 4px;
   padding: 16px 32px;
-  color: #afb1b8;
+  color: var(--clients-logo-color);
 }
 .clients-link:hover .clients-box,
 .clients-link:focus .clients-box {
@@ -415,6 +416,9 @@ body {
 
   background-color: var(--hero-backgraund-color);
 }
+.footer > .conteiner {
+  display: flex;
+}
 .address {
   margin-top: 0;
   margin-bottom: 0;
@@ -440,4 +444,34 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+.footer-social {
+  margin-left: 70px;
+  margin-top: 12px;
+  padding: 0;
+}
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.social-list {
+  display: flex;
+}
+.social-item {
+  margin-left: 10px;
+}
+.social-item:first-child {
+  margin-left: 0px;
+}
+.social-list .social-links {
+  background-color: var(--footer-social-color);
+}
+.social-list .social-links:hover,
+.social-list .social-links:focus {
+  background-color: var(--accent-text-color);
 }
