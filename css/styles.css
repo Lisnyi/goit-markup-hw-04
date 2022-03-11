@@ -290,11 +290,13 @@ body {
   flex-basis: calc((100% - 30px) / 4);
 }
 .social-links {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
+
   color: var(--clients-logo-color);
 }
 .social-icon {
@@ -424,6 +426,7 @@ body {
 }
 .footer > .conteiner {
   display: flex;
+  align-items: baseline;
 }
 .address {
   margin-top: 0;
@@ -453,8 +456,6 @@ body {
 }
 .footer-social {
   margin-left: 70px;
-  margin-top: 12px;
-  padding: 0;
 }
 .footer-title {
   margin-top: 0;
