@@ -198,11 +198,13 @@ body {
   margin-left: 0;
 }
 .features-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: var(--secondary-backgraund-color);
   margin-bottom: 30px;
-  padding: 25px 100px;
 }
 .features-icon {
   width: 70px;
@@ -310,11 +312,15 @@ body {
   justify-content: space-between;
 }
 .clients-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 170px;
   height: 92px;
   border: 1px solid var(--clients-logo-color);
   border-radius: 4px;
-  padding: 16px 32px;
+
   color: var(--clients-logo-color);
 }
 .clients-link:hover .clients-box,
